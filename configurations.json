@@ -16,6 +16,16 @@
         ["email", "string", "Email", "required"],
         ["status", "integer", "Status", "required"]
       ]
-    }
+    },
+    {
+        "name": "customer",
+        "field": [
+          ["id", "integer", "ID", "required"],
+          ["name", "string", "Name", "required"],
+          ["email", "string", "Email", "required"],
+          ["address", "string", "Address", "required"],
+          ["status", "integer", "Status", "required"]
+        ]
+      }
   ]
 }

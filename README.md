@@ -45,3 +45,17 @@ add view page (you need to generate this from configuration.json. If there are m
 <input type="number" name="status" id="status" value="" required/>
 <input type="submit" name="submit" id="submit" value="Submit"/>
 </form>
+
+## How to run
+
+# 1
+Run the Model_builder.js file by running command npm run build. Files will be created and saved under the release directory.
+Models will be saved in release/models/
+Routes will be saved in release/routes/
+Views will be saved in release/views/
+
+# 2
+Start the server by running npm start.
+
+# 3
+Open any file in release/views directory and save the data. 

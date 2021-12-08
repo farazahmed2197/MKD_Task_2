@@ -5,16 +5,15 @@ const router = express.Router();
 
 router.post("/add", async (req, res) => {
             try {
-              const user = require("../models/user.js");
-              await user.sync();
-              const userRecord = await user.create({
+              const location = require("../models/location.js");
+              await location.sync();
+              const locationRecord = await location.create({
                     				name : req.body.name,
-				email : req.body.email,
 				status : req.body.status,
 
                 });
               return res.status(200).json({
-                data: userRecord,
+                data: locationRecord,
                 status: true,
               });
             } catch (error) {

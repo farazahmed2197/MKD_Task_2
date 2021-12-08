@@ -10,6 +10,7 @@ id:{
 type: DataTypes.INTEGER,
 allowNull: false,
 primaryKey: true,
+autoIncrement: true,
 },
 name:{
 type: DataTypes.STRING,
@@ -21,8 +22,7 @@ allowNull: false,
 },
 },
 {
-    sequelize,
-    modelName: 'location',
-});
-
+        sequelize,
+        modelName: 'location',
+    });
 module.exports = location;

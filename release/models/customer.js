@@ -3,9 +3,9 @@
 const { DataTypes, Model } = require('sequelize');
 const sequelize = require('../../dbConnect')
 
-class user extends Model {}
+class customer extends Model {}
 
-user.init({
+customer.init({
 id:{
 type: DataTypes.INTEGER,
 allowNull: false,
@@ -20,6 +20,10 @@ email:{
 type: DataTypes.STRING,
 allowNull: false,
 },
+address:{
+type: DataTypes.STRING,
+allowNull: false,
+},
 status:{
 type: DataTypes.INTEGER,
 allowNull: false,
@@ -27,6 +31,6 @@ allowNull: false,
 },
 {
         sequelize,
-        modelName: 'user',
+        modelName: 'customer',
     });
-module.exports = user;
+module.exports = customer;

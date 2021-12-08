@@ -8,8 +8,7 @@ const host = 'localhost';
 const sequelize = require('./dbConnect');
 
 //require routes
-const products = require('./routes/products');
-const orders = require('./routes/orders');
+const release = require('./release/routes/index');
 var cors = require('cors')
 
 
@@ -39,8 +38,7 @@ app.use(async (req, res, next) => {
   });
 
 //forward to routes
-app.use('/products', products);
-app.use('/orders', orders);
+app.use('/release', release);
 
 //Error Handlers    ///////////
 app.use((req, res, next) => {
